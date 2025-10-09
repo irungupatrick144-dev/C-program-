@@ -1,0 +1,22 @@
+/*
+name :patrick kuria
+reg no:CT101/G/26479/25
+desciption :program to buy data from mpesa
+*/
+#include<stdio.h>
+int main(){
+	
+	float data_cost, mpesa_balance ;
+	printf("enter the mpesa_balance\n");
+	scanf("%f",& mpesa_balance);
+	printf("enter data_cost you want to buy\n");
+	scanf("%f",&data_cost);{
+	if (data_cost<=mpesa_balance){
+	printf("successfully ,wait a confirmation message\n");
+}	else {
+		printf(" insufficient balance\n");
+	}
+	}
+	return 0;
+	
+	}

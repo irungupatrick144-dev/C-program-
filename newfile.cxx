@@ -1,0 +1,28 @@
+/*
+discount:
+amount<1000,no discount
+between 1000 and 5000 :5% discount
+*/
+#include <stdio.h>
+int main(){
+	float amount,discount, amount_payable;
+	printf(" enter purchase amount");
+	scanf("%f",&amount);
+	if (amount>5000){
+		discount=0.1* amount;
+	}
+	else if( amount >=1000 && amount<=5000){
+		discount=0.05*amount;
+	}
+	
+	else {
+		discount=0;
+	}
+	amount_payable =amount-discount;
+	printf("The amount before discount is ksh .%.2f\n",amount);
+	printf("the discount is ksh.%2f\n",discount);
+	printf("the amount after discount is ksh.%.2f\n",amount_payable);
+
+return 0;
+	
+}

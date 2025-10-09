@@ -1,0 +1,18 @@
+/* 
+name: patrick kuria
+reg number:CT101/G/26479/25
+description: program to display units for this semester
+*/
+#include <stdio.h>
+int main()
+{
+	// lust units fir thi semester
+	printf("communication  skils:");
+	printf("physics:\n");
+	printf("fundamental to ict:\n");
+	printf("mathamatics for science:\n");
+	printf("introduction to programming:\n");
+	printf("analogue electronics:\n");
+	printf("compter architecture:}n");
+	printf("discrete mathematics:\n");
+}

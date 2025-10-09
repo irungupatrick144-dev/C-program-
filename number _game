@@ -1,0 +1,14 @@
+/*
+name: patrick kuria
+regno:CT101/G/26479/25
+description:program for loop
+*/
+#include<stdio.h>
+int main(){
+	for (int i=50; i<=100; i--){
+		printf("print this loop%d\n",i);
+	}
+		return 0;
+
+	
+}

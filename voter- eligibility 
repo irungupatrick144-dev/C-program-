@@ -1,0 +1,22 @@
+/*
+name:patrick kuria
+reg no: CT101/G/26479/25
+date:6 octomber 2026
+description:program to check voter eligibility
+*/
+
+#include <stdio.h>
+int main(){
+	int age;
+	//prompt the user to enter their age
+	printf("enter your age\n");
+	scanf("%d",& age);
+	if (age >=18){
+	
+		printf("you are eligible to vote");
+	}
+		else{
+			printf("you are not eligible to vote");
+		}
+	return 0;
+}

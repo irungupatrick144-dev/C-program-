@@ -1,0 +1,30 @@
+/*
+name :patrick kuria
+regno:CT101/G/26479/25
+description:program for while loop
+*/
+#include<stdio.h>
+int main(){
+	int secrete_number, guess,attempt= 0;
+	printf(" write the secrete_number\n");
+	scanf ("%d",&secrete_number);
+printf("enter the guess");
+scanf("%d",& guess);
+attempt ++;
+	while (guess !=secrete_number){
+	if (guess >secrete_number){
+	printf("too high try again");
+	}
+	
+	else{
+		printf(" too low try again");
+	}
+		scanf("%d", &guess);
+		attempt++;
+	}
+		printf("correct ! guess =secrete_number\n");
+		printf(" print the total attempt %d \n" ,attempt);
+	
+		return 0;
+
+	}

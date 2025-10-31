@@ -14,7 +14,7 @@ float calculateElectricBill(int units)
 		bill = units * 10;
 	}
 	else if (units <= 200)
-	{
+
 		bill = (100 * 10) + (units - 100) * 15;
 	}
 	else

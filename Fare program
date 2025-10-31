@@ -1,0 +1,26 @@
+/*
+    Name: Patrick Kuria
+    Registration Number: CT101/G/26479/25
+    Description: Program to calculate fare based on distance traveled.
+*/
+
+#include <stdio.h>
+
+// Function to calculate total fare
+float calculateFare(float distance) {
+    float fareRate = 50.0; // Fare rate per kilometer
+    float totalFare = distance * fareRate;
+    return totalFare;
+}
+
+int main() {
+    float distance;
+    
+    printf("Enter distance traveled (in kilometers): ");
+    scanf("%f", &distance);
+
+    float fare = calculateFare(distance);
+    printf("Total Fare: KSh. %.2f\n", fare);
+
+    return 0;
+}

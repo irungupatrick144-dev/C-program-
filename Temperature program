@@ -1,0 +1,25 @@
+/*
+    Name: Patrick Kuria
+    Registration Number: CT101/G/26479/25
+    Description: Program to convert temperature from Fahrenheit to Celsius.
+*/
+
+#include <stdio.h>
+
+// Function to convert Fahrenheit to Celsius
+float convertToCelsius(float fahrenheit) {
+    float celsius = (fahrenheit - 32) * 5.0 / 9.0;
+    return celsius;
+}
+
+int main() {
+    float fahrenheit;
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+
+    float celsius = convertToCelsius(fahrenheit);
+    printf("Temperature in Celsius: %.2f°C\n", celsius);
+
+    return 0;
+}

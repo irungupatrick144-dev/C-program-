@@ -1,0 +1,45 @@
+/*
+    Name: Patrick Kuria
+    Registration Number: CY101/G/26479/25
+
+    Description:
+ 2D array to represent room occupancy in one hotel branch.
+    The hotel has 5 floors and each floor has 10 rooms.
+    The user enters 1 if the room is occupied and 0 if it is vacant.
+    The program then counts and displays how many rooms are occupied and vacant
+    on each floor.
+*/
+
+#include <stdio.h>
+
+int main() {
+    int occupancy[5][10];
+    int floor, room, occupied, vacant;
+
+    // Input occupancy for each room
+    for(floor = 0; floor < 5; floor++) {
+        printf("\n--- Enter data for Floor %d ---\n", floor + 1);
+        for(room = 0; room < 10; room++) {
+            printf("Room %d (1 = Occupied, 0 = Vacant): ", room + 1);
+            scanf("%d", &occupancy[floor][room]);
+        }
+    }
+
+    // Count and display occupancy per floor
+    for(floor = 0; floor < 5; floor++) {
+        occupied = 0;
+        vacant = 0;
+
+        for(room = 0; room < 10; room++) {
+            if(occupancy[floor][room] == 1)
+                occupied++;
+            else
+                vacant++;
+        }
+
+        printf("\nFloor %d -> Occupied: %d rooms, Vacant: %d rooms\n",
+               floor + 1, occupied, vacant);
+    }
+
+    return 0;
+}
